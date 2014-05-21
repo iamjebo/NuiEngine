@@ -1,0 +1,350 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A536EABD-D4B0-408B-A2BB-1AC9C5245320}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>NuiEngine</RootNamespace>
+    <AssemblyName>NuiEngine</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="NuiControl\NuiConfig.cs" />
+    <Compile Include="NuiControl\NuiButton\NuiButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="NuiControl\NuiCheckBox\NuiCheckBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="NuiControl\NuiForm\NuiForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NuiControl\NuiForm\NuiFormBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Core\Render.cs" />
+    <Compile Include="NuiControl\NuiForm\ClassStyle.cs" />
+    <Compile Include="NuiControl\NuiControlState.cs" />
+    <Compile Include="NuiControl\NuiGlassButton\NuiGlassButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="NuiControl\NuiImageButton\NuiImageButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="NuiControl\NuiMouseOperate.cs" />
+    <Compile Include="NuiControl\NuiForm\SysBtnState.cs" />
+    <Compile Include="NuiControl\NuiForm\WindowStyle.cs" />
+    <Compile Include="NuiControl\NuiForm\WindowStyleEx.cs" />
+    <Compile Include="NuiControl\NuiForm\SysBtn.cs" />
+    <Compile Include="NuiControl\NuiForm\SysBtnManager.cs" />
+    <Compile Include="NuiControl\NuiMessageBox\NuiMessageBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NuiControl\NuiMessageBox\NuiMessageBoxButtons.cs" />
+    <Compile Include="NuiControl\NuiMessageBox\NuiMessageBoxIcon.cs" />
+    <Compile Include="NuiControl\NuiProgressBar\AbstractProgressBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="NuiControl\NuiProgressBar\AbstractProgressPainter.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="NuiControl\NuiProgressBar\BarberPoleProgressPainter.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="NuiControl\NuiProgressBar\BevelledGradientProgressPainter.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="NuiControl\NuiProgressBar\BevelledProgressPainter.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="NuiControl\NuiProgressBar\CandyCaneBackgroundPainter.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="NuiControl\NuiProgressBar\CandyCaneProgressPainter.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="NuiControl\NuiProgressBar\ChainedGlossPainter.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="NuiControl\NuiProgressBar\ColorUtility.cs" />
+    <Compile Include="NuiControl\NuiProgressBar\DualProgressBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="NuiControl\NuiProgressBar\FlatGlossPainter.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="NuiControl\NuiProgressBar\FruityLoopsBackgroundPainter.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="NuiControl\NuiProgressBar\FruityLoopsProgressPainter.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="NuiControl\NuiProgressBar\GradientBackgroundPainter.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="NuiControl\NuiProgressBar\GradientGlossPainter.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="NuiControl\NuiProgressBar\HSV.cs" />
+    <Compile Include="NuiControl\NuiProgressBar\IAnimatedProgressPainter.cs" />
+    <Compile Include="NuiControl\NuiProgressBar\IGlossPainter.cs" />
+    <Compile Include="NuiControl\NuiProgressBar\IProgressBackgroundPainter.cs" />
+    <Compile Include="NuiControl\NuiProgressBar\IProgressBorderPainter.cs" />
+    <Compile Include="NuiControl\NuiProgressBar\IProgressPainter.cs" />
+    <Compile Include="NuiControl\NuiProgressBar\JavaProgressPainter.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="NuiControl\NuiProgressBar\MetalProgressPainter.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="NuiControl\NuiProgressBar\MiddleGlossPainter.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="NuiControl\NuiProgressBar\PlainBackgroundPainter.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="NuiControl\NuiProgressBar\PlainBorderPainter.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="NuiControl\NuiProgressBar\PlainProgressPainter.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="NuiControl\NuiProgressBar\ProgressBarEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="NuiControl\NuiProgressBar\RarBackgroundPainter.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="NuiControl\NuiProgressBar\RarBorderPainter.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="NuiControl\NuiProgressBar\RarProgressBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="NuiControl\NuiProgressBar\RarProgressPainter.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="NuiControl\NuiProgressBar\RoundGlossPainter.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="NuiControl\NuiProgressBar\StripedProgressPainter.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="NuiControl\NuiProgressBar\StyledBorderPainter.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="NuiControl\NuiProgressBar\WaveProgressPainter.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="NuiControl\NuiRadioButton\NuiRadioButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="NuiControl\NuiTextBox\NuiTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="NuiControl\NuiTrackBar\ControlPaintEx.cs" />
+    <Compile Include="NuiControl\NuiTrackBar\ControlState.cs" />
+    <Compile Include="NuiControl\NuiTrackBar\GraphicsPathHelper.cs" />
+    <Compile Include="NuiControl\NuiTrackBar\ImageDc.cs" />
+    <Compile Include="NuiControl\NuiTrackBar\InterpolationModeGraphics.cs" />
+    <Compile Include="NuiControl\NuiTrackBar\PaintThumbEventArgs.cs" />
+    <Compile Include="NuiControl\NuiTrackBar\PaintTickEventArgs.cs" />
+    <Compile Include="NuiControl\NuiTrackBar\RegionHelper.cs" />
+    <Compile Include="NuiControl\NuiTrackBar\RenderHelper.cs" />
+    <Compile Include="NuiControl\NuiTrackBar\RoundStyle.cs" />
+    <Compile Include="NuiControl\NuiTrackBar\SmoothingModeGraphics.cs" />
+    <Compile Include="NuiControl\NuiTrackBar\TextRenderingHintGraphics.cs" />
+    <Compile Include="NuiControl\NuiTrackBar\ThumbArrowDirection.cs" />
+    <Compile Include="NuiControl\NuiTrackBar\TrackBarColorTable.cs" />
+    <Compile Include="NuiControl\NuiTrackBar\TrackBarEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="NuiControl\NuiTrackBar\Win32\ClassName.cs" />
+    <Compile Include="NuiControl\NuiTrackBar\Win32\Const\AC.cs" />
+    <Compile Include="NuiControl\NuiTrackBar\Win32\Const\CDDS.cs" />
+    <Compile Include="NuiControl\NuiTrackBar\Win32\Const\CDRF.cs" />
+    <Compile Include="NuiControl\NuiTrackBar\Win32\Const\GWL.cs" />
+    <Compile Include="NuiControl\NuiTrackBar\Win32\Const\HWND.cs" />
+    <Compile Include="NuiControl\NuiTrackBar\Win32\Const\ICC.cs" />
+    <Compile Include="NuiControl\NuiTrackBar\Win32\Const\LPSTR.cs" />
+    <Compile Include="NuiControl\NuiTrackBar\Win32\Const\NM.cs" />
+    <Compile Include="NuiControl\NuiTrackBar\Win32\Const\SWP.cs" />
+    <Compile Include="NuiControl\NuiTrackBar\Win32\Const\TBM.cs" />
+    <Compile Include="NuiControl\NuiTrackBar\Win32\Const\TTDT.cs" />
+    <Compile Include="NuiControl\NuiTrackBar\Win32\Const\TTF.cs" />
+    <Compile Include="NuiControl\NuiTrackBar\Win32\Const\TTI.cs" />
+    <Compile Include="NuiControl\NuiTrackBar\Win32\Const\TTM.cs" />
+    <Compile Include="NuiControl\NuiTrackBar\Win32\Const\TTN.cs" />
+    <Compile Include="NuiControl\NuiTrackBar\Win32\Const\TTS.cs" />
+    <Compile Include="NuiControl\NuiTrackBar\Win32\Const\VK.cs" />
+    <Compile Include="NuiControl\NuiTrackBar\Win32\Const\WM.cs" />
+    <Compile Include="NuiControl\NuiTrackBar\Win32\Const\WS.cs" />
+    <Compile Include="NuiControl\NuiTrackBar\Win32\Const\WS_EX.cs" />
+    <Compile Include="NuiControl\NuiTrackBar\Win32\Enum\TRACKMOUSEEVENT_FLAGS.cs" />
+    <Compile Include="NuiControl\NuiTrackBar\Win32\Helper.cs" />
+    <Compile Include="NuiControl\NuiTrackBar\Win32\NativeMethods.cs" />
+    <Compile Include="NuiControl\NuiTrackBar\Win32\Result.cs" />
+    <Compile Include="NuiControl\NuiTrackBar\Win32\Struct\BLENDFUNCTION.cs" />
+    <Compile Include="NuiControl\NuiTrackBar\Win32\Struct\INITCOMMONCONTROLSEX.cs" />
+    <Compile Include="NuiControl\NuiTrackBar\Win32\Struct\NMCUSTOMDRAW.cs" />
+    <Compile Include="NuiControl\NuiTrackBar\Win32\Struct\NMHDR.cs" />
+    <Compile Include="NuiControl\NuiTrackBar\Win32\Struct\NMTTCUSTOMDRAW.cs" />
+    <Compile Include="NuiControl\NuiTrackBar\Win32\Struct\NMTTDISPINFO.cs" />
+    <Compile Include="NuiControl\NuiTrackBar\Win32\Struct\PAINTSTRUCT.cs" />
+    <Compile Include="NuiControl\NuiTrackBar\Win32\Struct\POINT.cs" />
+    <Compile Include="NuiControl\NuiTrackBar\Win32\Struct\RECT.cs" />
+    <Compile Include="NuiControl\NuiTrackBar\Win32\Struct\TOOLINFO.cs" />
+    <Compile Include="NuiControl\NuiTrackBar\Win32\Struct\TRACKMOUSEEVENT.cs" />
+    <Compile Include="NuiControl\NuiTrackBar\Win32\Struct\TT_HITTESTINFO.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utility\MethodHelper.cs" />
+    <Compile Include="Utility\Win32.cs" />
+    <EmbeddedResource Include="NuiControl\NuiMessageBox\NuiMessageBox.resx">
+      <DependentUpon>NuiMessageBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\form_fringe_bkg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sys_close_down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sys_close_highlight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sys_close_normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sys_max_down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sys_max_highlight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sys_max_normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sys_min_down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sys_min_highlight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sys_min_normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sys_restore_down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sys_restore_highlight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sys_restore_normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\msgbox_error.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_focus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_highlight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\msgbox_info.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\msgbox_ok.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\msgbox_question.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\msgbox_warning.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\checkbox_check.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\glassbtn_down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\glassbtn_hot.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\radiobox_dot.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
